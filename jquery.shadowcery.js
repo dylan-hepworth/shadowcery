@@ -1,5 +1,5 @@
 /*!
- * Shadowcery (http://getbootstrap.com)
+ * Shadowcery
  * Copyright 2016 Dylan Hepworth (dylanhepworth.com)
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
 (function($) {
@@ -19,7 +19,7 @@
         shadowColor = hexRgb(settings.color),
         css = "";
     
-    if (domText.indexOf(this[0].tagName) != -1)
+    if (domText.indexOf(this[0].tagName) !== -1)
         var shadowType = "text-shadow";
     else
         var shadowType = "box-shadow";
@@ -37,15 +37,15 @@
         if (k <= 0)
             k = 0.01;
 
-        if (i == settings.length)
+        if (i === settings.length)
             var css = css + h + "px " + v + "px " + settings.blur + "px rgba(" + shadowColor['r'] + "," + shadowColor['g'] + "," + shadowColor['b'] + "," + k + ")"; 
         else
             var css = css + h + "px " + v + "px " + settings.blur + "px rgba(" + shadowColor['r'] + "," + shadowColor['g'] + "," + shadowColor['b'] + "," + k + "),"; 
     }
 
-    if (shadowType == "text-shadow")
+    if (shadowType === "text-shadow")
         return this.delay(settings.delay).css({ "text-shadow":  css });    
-    else (shadowType == "box-shadow")
+    else (shadowType === "box-shadow")
         return this.delay(settings.delay).css({ "box-shadow":  css });    
     };
 }(jQuery));
