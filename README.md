@@ -12,9 +12,15 @@ $('.shadow').shadowcery();
 
 ### Options:
 color: Sets the color of the shadow
+
 opacity: Sets the opacity value from 0 to 1
+
 length: The total length of the shadow
+
 delay: The amount of time you'd like to delay the shadow from animating
+
 vertical: Sets the vertical direction of the shadow
+
 horizontal: Set the horizontal direction of the shadow
+
 blur: Amount of blur
