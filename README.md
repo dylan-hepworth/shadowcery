@@ -1,5 +1,5 @@
-#SHADOWCERY
-##A jQuery plugin for making ridiculous shadows
+# SHADOWCERY
+## A jQuery plugin for making ridiculous shadows
 Shadowcery adds layered box-shadows to dom elements and animates them into view.
 
 Simply add jquery.shadowcery.js or jquery.shadowcery.min.js to your website (make sure jQuery is in place of course).
@@ -10,7 +10,7 @@ In order to add shadows to an object, add the following:
 $('.shadow').shadowcery();
 ```
 
-###Options:
+### Options:
 color: Sets the color of the shadow
 opacity: Sets the opacity value from 0 to 1
 length: The total length of the shadow
